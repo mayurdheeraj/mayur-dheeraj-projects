@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - Change Image</title>
+  <style>
+    body { 
+      background: #111; 
+      color: #fff; 
+      text-align: center; 
+      padding: 20px; 
+      font-family: Arial;
+    }
+    button {
+      background: #28a745;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Changing Image Using DOM</h1>
+  
+  <!-- Image that will be changed by DOM -->
+  <img id="image" src="https://wallpapers.com/images/hd/"Prabhas Wallpapers - Wallpaper Cave"
+ width="200">
+  <br>
+  
+  <button onclick="changeToprabhas()">Show prabhas</button>
+  <button onclick="changeToIronMan()">Show Iron Man</button>
+  
+  <script>
+    // Your screenshot code had empty src = ""
+    // Here are working examples:
+    
+    function changeToprabhas(){
+      // DOM changes image src to prabhas
+      document.getElementById("image").src = "https://www.topgear.com/sites/default/files/2022/09/1-Ford-Mustang-Eleanor.jpg";
+    }
+    
+    function changeToIronMan(){
+      // DOM changes image back to Iron Man
+      document.getElementById("image").src = "https://wallpapers.com/images/hd/iron-man-tony-stark-ouqxo5w2b59h0042.jpg";
+    }
+  </script>
+</body>
+</html>
