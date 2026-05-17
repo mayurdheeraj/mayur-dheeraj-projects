@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Content Change</title>
+  <style>
+    body { 
+      background: #111; 
+      color: #fff; 
+      font-family: Arial; 
+      text-align: center; 
+      padding: 50px; 
+    }
+    #heading { 
+      color: #0077ff; 
+      font-size: 36px; 
+    }
+    button {
+      background: green;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+   <h1 id="heading">Hello</h1>
+  <button onclick="changeContent()">Click to Change</button>
+  
+  <script>
+    // This function runs when button is clicked
+    function changeContent(){
+      // DOM selects h1 and changes HTML content dynamically
+      document.getElementById("heading").innerHTML = "Welcome to mern short term";
+    }
+  </script>
+</body>
+</html>
