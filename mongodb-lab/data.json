@@ -1,0 +1,7 @@
+[
+  {"student_id": "S001", "name": "Rahul Sharma", "department": "CSE", "marks": {"maths": 85, "physics": 78, "chemistry": 92}, "total": 255, "grade": "A"},
+  {"student_id": "S002", "name": "Priya Patel", "department": "ECE", "marks": {"maths": 90, "physics": 88, "chemistry": 85}, "total": 263, "grade": "A"},
+  {"student_id": "S003", "name": "Amit Kumar", "department": "ME", "marks": {"maths": 65, "physics": 70, "chemistry": 68}, "total": 203, "grade": "B"},
+  {"student_id": "S004", "name": "Sneha Reddy", "department": "CSE", "marks": {"maths": 95, "physics": 92, "chemistry": 98}, "total": 285, "grade": "A+"},
+  {"student_id": "S005", "name": "Vikram Singh", "department": "EEE", "marks": {"maths": 72, "physics": 75, "chemistry": 70}, "total": 217, "grade": "B"}
+]
