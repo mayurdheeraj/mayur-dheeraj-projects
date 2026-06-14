@@ -1,0 +1,20 @@
+const myName = "Dheeraj";
+const mySkills = ["HTML5", "CSS3", "JavaScript", "Flexbox", "Responsive Design"];
+
+function loadPortfolio() {
+    document.getElementById("user-name").innerText = myName;
+    
+    const listContainer = document.getElementById("skills-list");
+    
+    for (let i = 0; i < mySkills.length; i++) {
+        const card = document.createElement("div");
+        card.className = "skill-card";
+        card.innerText = mySkills[i];
+        listContainer.appendChild(card);
+    }
+}
+
+function showContact() {
+     alert(`Contacting ${myName}... \nEmail: dheeraj@example.com`);
+}
+loadPortfolio();

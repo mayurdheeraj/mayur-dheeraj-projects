@@ -1,13 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-react-app</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">DevPortfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#" onclick="showContact()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home" class="hero">
+        <h1>Hi, I'm <span id="user-name">Dheeraj</span></h1>
+        <p>Aspiring MERN Stack Developer</p>
+    </main>
+
+    <section id="skills" class="skills-container">
+        <h2>My Skills</h2>
+        <div id="skills-list" class="flex-grid"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 Built during MERN Mentorship</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
